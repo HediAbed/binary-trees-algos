@@ -39,7 +39,7 @@ D0= 0
 ##### (for level 1)
 level = 1
 D(level)= level * N
-> While `N` is the number of child nodes: 
+> While "N" is the number of child nodes: 
 N in [0..2] and Node_left + Node_right => N
 ##### (for level 2)
 level =2
