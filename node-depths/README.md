@@ -6,7 +6,7 @@ Each `BinaryTree` node has an integer `value`, a `left` child node, and a `right
 
 ### Sample input:
 
-![tree](./Images/tree.png)
+![tree](./images/tree.png)
 
 ### Sample output:
 
