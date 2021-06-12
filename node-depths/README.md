@@ -63,17 +63,17 @@ Dn+1(level+1)=Dn(level)+ D(level+1) + D(level+1)
 
 ```java
 class Program {
-	// Dn+1(l+1)=Dn(l)+ D(l+1) + D(l+1)
+  // Dn+1(l+1)=Dn(l)+ D(l+1) + D(l+1)
   public static int nodeDepths(BinaryTree root) {
     return  nodeDepths(root,1);
   }
-	
+	// recursion
   public static int nodeDepths(BinaryTree root,int level) {
     if(root == null) return 0;
     int n = getChildNodesNumber(root);
     return (level *n) + nodeDepths(root.left,level+1) + nodeDepths(root.right,level+1);
   }
-	
+	// number of child nodes
   public static int getChildNodesNumber(BinaryTree root) {
     if(root.left==null && root.right==null)
       return 0;
