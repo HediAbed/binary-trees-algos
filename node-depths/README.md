@@ -37,26 +37,28 @@ D0= 0
 > root depth is zero
 
 ##### (for level 1)
-level = 1
+level = 1, 
 D(level)= level * N
 > While "N" is the number of child nodes: 
 N in [0..2] and Node_left + Node_right => N
 ##### (for level 2)
-level =2
+level =2, 
 D2(level)=D(level-1)+ D(level) + D(level) 
 >summ of prevous n-1 plus the right and left: D(level-1)+ D_left(level) + D_right(level)
 ##### (for level 3)
-level =3
+level =3, 
 D3(level)=D2(level-1)+ D(level) + D(level)
 ##### (for level 4)
-level =4
+level =4, 
 D4(level)=D3(level-1)+ D(level) + D(level)
 
 ##### (for level n)
-level = n
+level = n, 
+
 Dn(level)=Dn-1(level-1)+ D(level) + D(level)
 ##### (for level n+1)
 level = n + 1
+
 Dn+1(level+1)=Dn(level)+ D(level+1) + D(level+1)
 
 #### 1/ recursion implementation:
