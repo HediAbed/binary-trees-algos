@@ -1,6 +1,6 @@
 # Node Depths
 
-The distance between a node in a binary tree and the tree's root is cakked node's depth.
+The distance between a node in a binary tree and the tree's root is called node's depth.
 Write a function that takes a binary tree and return the sum of it's nodes' depths.
 Each `BinaryTree` node has an integer `value`, a `left` child node, and a `right` child node. Children nodes can euther be BinaryTree nodes themselves or `Node` / `Null`
 
