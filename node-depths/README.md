@@ -69,17 +69,17 @@ class Program {
   }
 	
   public static int nodeDepths(BinaryTree root,int level) {
-		 if(root == null) return 0;
-		 int n = getChildNodesNumber(root);
-		 return (level *n) + nodeDepths(root.left,level+1) + nodeDepths(root.right,level+1);
+    if(root == null) return 0;
+    int n = getChildNodesNumber(root);
+    return (level *n) + nodeDepths(root.left,level+1) + nodeDepths(root.right,level+1);
   }
 	
   public static int getChildNodesNumber(BinaryTree root) {
-		if(root.left==null && root.right==null)
-			return 0;
-		if(root.left!=null && root.right!=null)
+    if(root.left==null && root.right==null)
+      return 0;
+    if(root.left!=null && root.right!=null)
       return 2;
-		return 1;
+    return 1;
   }
   static class BinaryTree {
     int value;
