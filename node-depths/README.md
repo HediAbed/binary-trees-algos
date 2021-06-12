@@ -24,7 +24,7 @@ TREE:
 // The depth of the node with value 4 is 1.
 // The depth of the node with value 5 is 1.
 // Etc..
-// Summing all og these depths yields16.
+// Summing all og these depths yields 16.
 ```
 
 ### My solution:
