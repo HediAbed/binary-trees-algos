@@ -5,9 +5,16 @@ Write a function that takes a binary tree and return the sum of it's nodes' dept
 Each `BinaryTree` node has an integer `value`, a `left` child node, and a `right` child node. Children nodes can euther be BinaryTree nodes themselves or `Node` / `Null`
 
 ### Sample input:
-
-![tree](./images/tree.png)
-
+```
+TREE:
+        _____1____
+       /          \
+      2__        __3_
+     /   \      /    \
+    4     5    6      7
+   / \
+  8   9
+```
 ### Sample output:
 
 ```sh
